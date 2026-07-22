@@ -336,7 +336,28 @@ a { color: var(--cyan); text-decoration: none; }
 .loading-dots span:nth-child(3) { animation-delay: 0.4s; }
 @keyframes dots { 0%, 20% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 0; } }
 
+/* Experience */
+.exp-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.exp-header h3 { margin: 0.5rem 0 0.2rem; color: var(--text); font-size: 1.15rem; }
+.exp-date { color: var(--cyan); font-size: 0.85rem; white-space: nowrap; }
+.exp-company { color: var(--text-dim); font-size: 0.9rem; margin: 0 0 0.5rem; }
+
 /* Skills */
+.skills-category { margin-bottom: 2rem; }
+.skills-category:last-child { margin-bottom: 0; }
+.skills-subtitle {
+  color: var(--green-dim);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.9rem;
+}
 .skills-grid {
   display: flex;
   flex-wrap: wrap;

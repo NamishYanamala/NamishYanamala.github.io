@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Namish Yanamala // root@security</title>
-<meta name="description" content="Namish Yanamala — CS student building at the intersection of cybersecurity and AI.">
+<meta name="description" content="Namish Yanamala — Charlotte, NC based CS student (Cybersecurity concentration, UNC Charlotte) and Enterprise Tech & Automation Intern at Ally Financial, building at the intersection of cybersecurity and AI.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -20,6 +20,7 @@
   <div class="nav-logo">NY<span class="blink">_</span></div>
   <div class="nav-links">
     <a href="#about">~/about</a>
+    <a href="#experience">~/experience</a>
     <a href="#projects">~/projects</a>
     <a href="#skills">~/skills</a>
     <a href="#contact">~/contact</a>
@@ -36,8 +37,9 @@
       <p><span class="prompt">guest@portfolio</span>:<span class="path">~$</span> whoami</p>
       <h1 id="typed-name"></h1>
       <p id="typed-role" class="role-line"></p>
-      <p class="hero-desc">Computer Science student building at the intersection of
-        <span class="hl">cybersecurity</span> and <span class="hl">artificial intelligence</span>.
+      <p class="hero-desc">Charlotte, NC based Computer Science student (Cybersecurity concentration) at
+        UNC Charlotte and Enterprise Tech &amp; Automation Intern at Ally Financial, building at the
+        intersection of <span class="hl">cybersecurity</span> and <span class="hl">artificial intelligence</span>.
         I break things on purpose, then teach machines to do it faster (and more safely).</p>
       <div class="hero-buttons">
         <a href="#projects" class="btn btn-primary">./view_projects.sh</a>
@@ -63,24 +65,64 @@
         </div>
         <div class="terminal-body about-body">
           <p><span class="prompt">$</span> cat about.md</p>
-          <p>Hey, I'm Namish — a Computer Science student who got tired of just
-          <em>using</em> security tools and wanted to understand (and build) the
-          machinery behind them.</p>
-          <p>Lately I've been obsessed with the overlap between
+          <p>Hey, I'm Namish — a Computer Science student at UNC Charlotte concentrating in
+          Cybersecurity, based in Charlotte, NC. I got tired of just <em>using</em> security
+          tools and wanted to understand (and build) the machinery behind them.</p>
+          <p>I'm currently an <span class="hl">Enterprise Tech &amp; Automation Intern</span> at
+          Ally Financial, where I work on zero-trust security hardening — things like locking
+          down a credential proxy so sensitive auth headers are blocked by default, filtering
+          unauthorized headers before they reach backend services, and extending an AWS
+          DevSecOps pipeline to enforce Terraform compliance on hybrid cloud (Nutanix)
+          deployments.</p>
+          <p>Outside of work, I'm obsessed with the overlap between
           <span class="hl">offensive security</span> and <span class="hl">AI agents</span>:
-          what happens when you give an LLM tools, a scope, and a target? My goal is to
-          build systems that think like an attacker so defenders can stay ahead of one.</p>
-          <p>When I'm not breaking my own lab environment, I'm learning new attack
-          techniques, reading CVEs, and figuring out how autonomous agents should (and
-          shouldn't) be trusted with dangerous tools.</p>
+          what happens when you give an LLM tools, a scope, and a target? That question is
+          what's driving the project below — building systems that think like an attacker so
+          defenders can stay ahead of one.</p>
           <p class="prompt-end"><span class="prompt">$</span> <span class="cursor-block">&nbsp;</span></p>
         </div>
       </div>
       <div class="status-card">
-        <div class="status-row"><span class="status-label">role</span><span class="status-val">CS Student</span></div>
-        <div class="status-row"><span class="status-label">focus</span><span class="status-val">Cybersecurity + AI</span></div>
-        <div class="status-row"><span class="status-label">currently</span><span class="status-val">Building an autonomous pentest agent</span></div>
+        <div class="status-row"><span class="status-label">location</span><span class="status-val">Charlotte, NC</span></div>
+        <div class="status-row"><span class="status-label">role</span><span class="status-val">CS Student, UNC Charlotte</span></div>
+        <div class="status-row"><span class="status-label">focus</span><span class="status-val">Cybersecurity + Zero-Trust + AI</span></div>
+        <div class="status-row"><span class="status-label">currently</span><span class="status-val">Interning @ Ally Financial</span></div>
+        <div class="status-row"><span class="status-label">certs</span><span class="status-val">Google Cybersecurity Pro, ISC2 CC</span></div>
         <div class="status-row"><span class="status-label">status</span><span class="status-val online">● online</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2 class="section-title"><span class="tag">&lt;</span>experience<span class="tag">/&gt;</span></h2>
+    <div class="terminal-window">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">experience.log</span>
+      </div>
+      <div class="terminal-body">
+        <p><span class="prompt">$</span> tail -f experience.log</p>
+        <div class="exp-entry">
+          <div class="exp-header">
+            <h3>Enterprise Tech &amp; Automation Intern</h3>
+            <span class="exp-date">May 2026 – July 2026</span>
+          </div>
+          <p class="exp-company">Ally Financial &middot; Charlotte, NC</p>
+          <ul class="feature-list">
+            <li>Led security hardening on an internal credential proxy, blocking sensitive auth headers by default with access controls configurable without deployments</li>
+            <li>Reduced credential leakage risk across cloud infrastructure by enforcing strict header filtering on a reverse proxy handling AWS IAM-based auth flows</li>
+            <li>Streamlined secure development workflows using Claude CLI, cutting implementation time while staying aligned with security requirements</li>
+            <li>Strengthened the company's zero-trust posture by building safeguards that auto-block unknown or unauthorized headers from reaching backend services</li>
+            <li>Proposed a shift-left security design extending an AWS DevSecOps pipeline to enforce Terraform compliance on private cloud (Nutanix) deployments</li>
+          </ul>
+          <div class="tag-row">
+            <span class="pill">AWS</span>
+            <span class="pill">Terraform</span>
+            <span class="pill">Zero-Trust Architecture</span>
+            <span class="pill">Credential Management</span>
+            <span class="pill">Nutanix</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -171,15 +213,51 @@
 
   <section id="skills" class="section">
     <h2 class="section-title"><span class="tag">&lt;</span>skills<span class="tag">/&gt;</span></h2>
-    <div class="skills-grid">
-      <div class="skill-chip">Python</div>
-      <div class="skill-chip">Java</div>
-      <div class="skill-chip">LLM / Agent Tooling</div>
-      <div class="skill-chip">Network Security</div>
-      <div class="skill-chip">Linux</div>
-      <div class="skill-chip">Git / GitHub</div>
-      <div class="skill-chip">Penetration Testing Fundamentals</div>
-      <div class="skill-chip">Machine Learning</div>
+    <div class="skills-category">
+      <h3 class="skills-subtitle">Languages</h3>
+      <div class="skills-grid">
+        <div class="skill-chip">Python</div>
+        <div class="skill-chip">SQL</div>
+        <div class="skill-chip">JavaScript</div>
+        <div class="skill-chip">Java</div>
+        <div class="skill-chip">C++</div>
+        <div class="skill-chip">Bash</div>
+        <div class="skill-chip">PowerShell</div>
+      </div>
+    </div>
+    <div class="skills-category">
+      <h3 class="skills-subtitle">Cloud, Security &amp; Tooling</h3>
+      <div class="skills-grid">
+        <div class="skill-chip">AWS</div>
+        <div class="skill-chip">Terraform</div>
+        <div class="skill-chip">GitLab CI/CD</div>
+        <div class="skill-chip">Git</div>
+        <div class="skill-chip">Docker</div>
+        <div class="skill-chip">Claude CLI</div>
+        <div class="skill-chip">Zero-Trust Architecture</div>
+        <div class="skill-chip">Credential Management</div>
+        <div class="skill-chip">REST APIs</div>
+        <div class="skill-chip">Header Security / Input Validation</div>
+        <div class="skill-chip">Nutanix</div>
+        <div class="skill-chip">Unit Testing</div>
+        <div class="skill-chip">Agile</div>
+      </div>
+    </div>
+    <div class="skills-category">
+      <h3 class="skills-subtitle">Operating Systems</h3>
+      <div class="skills-grid">
+        <div class="skill-chip">Windows</div>
+        <div class="skill-chip">Linux</div>
+        <div class="skill-chip">macOS</div>
+      </div>
+    </div>
+    <div class="skills-category">
+      <h3 class="skills-subtitle">Certifications</h3>
+      <div class="skills-grid">
+        <div class="skill-chip">Google Cybersecurity Professional</div>
+        <div class="skill-chip">ISC2 CC</div>
+        <div class="skill-chip">CompTIA Security+ (In Progress)</div>
+      </div>
     </div>
   </section>
 
@@ -197,6 +275,10 @@
           <a href="https://github.com/NamishYanamala" target="_blank" rel="noopener" class="btn btn-outline">
             <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
             GitHub
+          </a>
+          <a href="mailto:nryanamala05@gmail.com" class="btn btn-outline">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M1.75 3A1.75 1.75 0 0 0 0 4.75v6.5C0 12.216.784 13 1.75 13h12.5A1.75 1.75 0 0 0 16 11.25v-6.5A1.75 1.75 0 0 0 14.25 3H1.75zM1.5 4.75a.25.25 0 0 1 .25-.25h12.5a.25.25 0 0 1 .25.25v.263l-6.5 4.06-6.5-4.06V4.75zm0 1.764v4.736c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V6.514l-6.3 3.938a.75.75 0 0 1-.8 0L1.5 6.514z"/></svg>
+            Email
           </a>
         </div>
       </div>
