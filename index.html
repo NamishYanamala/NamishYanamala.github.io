@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Namish Yanamala // root@security</title>
+<meta name="description" content="Namish Yanamala — CS student building at the intersection of cybersecurity and AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#x1F512;</text></svg>">
+</head>
+<body>
+
+<canvas id="matrix"></canvas>
+
+<div class="scanline"></div>
+
+<nav id="navbar">
+  <div class="nav-logo">NY<span class="blink">_</span></div>
+  <div class="nav-links">
+    <a href="#about">~/about</a>
+    <a href="#projects">~/projects</a>
+    <a href="#skills">~/skills</a>
+    <a href="#contact">~/contact</a>
+  </div>
+</nav>
+
+<header id="hero">
+  <div class="terminal-window hero-terminal">
+    <div class="terminal-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="terminal-title">guest@namish-portfolio: ~</span>
+    </div>
+    <div class="terminal-body">
+      <p><span class="prompt">guest@portfolio</span>:<span class="path">~$</span> whoami</p>
+      <h1 id="typed-name"></h1>
+      <p id="typed-role" class="role-line"></p>
+      <p class="hero-desc">Computer Science student building at the intersection of
+        <span class="hl">cybersecurity</span> and <span class="hl">artificial intelligence</span>.
+        I break things on purpose, then teach machines to do it faster (and more safely).</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">./view_projects.sh</a>
+        <a href="https://github.com/NamishYanamala" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          github/NamishYanamala
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">scroll<span>&darr;</span></div>
+</header>
+
+<main>
+
+  <section id="about" class="section">
+    <h2 class="section-title"><span class="tag">&lt;</span>about<span class="tag">/&gt;</span></h2>
+    <div class="about-grid">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">about.md</span>
+        </div>
+        <div class="terminal-body about-body">
+          <p><span class="prompt">$</span> cat about.md</p>
+          <p>Hey, I'm Namish — a Computer Science student who got tired of just
+          <em>using</em> security tools and wanted to understand (and build) the
+          machinery behind them.</p>
+          <p>Lately I've been obsessed with the overlap between
+          <span class="hl">offensive security</span> and <span class="hl">AI agents</span>:
+          what happens when you give an LLM tools, a scope, and a target? My goal is to
+          build systems that think like an attacker so defenders can stay ahead of one.</p>
+          <p>When I'm not breaking my own lab environment, I'm learning new attack
+          techniques, reading CVEs, and figuring out how autonomous agents should (and
+          shouldn't) be trusted with dangerous tools.</p>
+          <p class="prompt-end"><span class="prompt">$</span> <span class="cursor-block">&nbsp;</span></p>
+        </div>
+      </div>
+      <div class="status-card">
+        <div class="status-row"><span class="status-label">role</span><span class="status-val">CS Student</span></div>
+        <div class="status-row"><span class="status-label">focus</span><span class="status-val">Cybersecurity + AI</span></div>
+        <div class="status-row"><span class="status-label">currently</span><span class="status-val">Building an autonomous pentest agent</span></div>
+        <div class="status-row"><span class="status-label">status</span><span class="status-val online">● online</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title"><span class="tag">&lt;</span>projects<span class="tag">/&gt;</span></h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card featured">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">ai-redteam-agent</span>
+        </div>
+        <div class="project-body">
+          <span class="badge badge-progress">IN DEVELOPMENT</span>
+          <h3>Autonomous AI Red-Team Agent</h3>
+          <p>An agentic system that chains an LLM with real security tooling to run
+          end-to-end penetration tests against deliberately vulnerable lab targets —
+          recon &rarr; vulnerability discovery &rarr; exploitation &rarr; reporting,
+          with human-defined scope and safety rails at every step.</p>
+          <ul class="feature-list">
+            <li>Tool-calling agent orchestration (recon, scanning, exploitation modules)</li>
+            <li>Strict scope-limiting &amp; guardrails — lab-only, no live targets</li>
+            <li>Auto-generated findings report mapped to MITRE ATT&amp;CK</li>
+            <li>Human-in-the-loop approval before any exploitation step</li>
+          </ul>
+          <div class="tag-row">
+            <span class="pill">Python</span>
+            <span class="pill">LLM Agents</span>
+            <span class="pill">Offensive Security</span>
+            <span class="pill">MITRE ATT&amp;CK</span>
+          </div>
+          <a class="btn btn-outline btn-small disabled" href="#" onclick="return false;">repo coming soon</a>
+        </div>
+      </article>
+
+      <article class="project-card placeholder">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">adversarial-ml-lab</span>
+        </div>
+        <div class="project-body">
+          <span class="badge badge-soon">PLANNED</span>
+          <h3>Adversarial ML Security Lab</h3>
+          <p>Attacking and defending a locally-hosted LLM — prompt injection,
+          jailbreaks, and evasion attacks paired with detection and guardrail
+          countermeasures.</p>
+          <div class="tag-row">
+            <span class="pill">AI Security</span>
+            <span class="pill">Red/Blue Team</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card placeholder">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">soc-copilot</span>
+        </div>
+        <div class="project-body">
+          <span class="badge badge-soon">PLANNED</span>
+          <h3>LLM SOC Copilot</h3>
+          <p>A RAG-powered assistant that triages SIEM alerts against live threat
+          intel feeds and MITRE ATT&amp;CK, cutting analyst noise in a simulated SOC
+          environment.</p>
+          <div class="tag-row">
+            <span class="pill">RAG</span>
+            <span class="pill">Blue Team</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card placeholder empty">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">???</span>
+        </div>
+        <div class="project-body">
+          <span class="badge badge-soon">COMING SOON</span>
+          <h3>Next project loading<span class="loading-dots"><span>.</span><span>.</span><span>.</span></span></h3>
+          <p>This slot is reserved for whatever I break next.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="section-title"><span class="tag">&lt;</span>skills<span class="tag">/&gt;</span></h2>
+    <div class="skills-grid">
+      <div class="skill-chip">Python</div>
+      <div class="skill-chip">Java</div>
+      <div class="skill-chip">LLM / Agent Tooling</div>
+      <div class="skill-chip">Network Security</div>
+      <div class="skill-chip">Linux</div>
+      <div class="skill-chip">Git / GitHub</div>
+      <div class="skill-chip">Penetration Testing Fundamentals</div>
+      <div class="skill-chip">Machine Learning</div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title"><span class="tag">&lt;</span>contact<span class="tag">/&gt;</span></h2>
+    <div class="terminal-window contact-terminal">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">contact.sh</span>
+      </div>
+      <div class="terminal-body">
+        <p><span class="prompt">$</span> ./get_in_touch.sh</p>
+        <p>Open to internships, collaborations, and interesting security/AI problems.</p>
+        <div class="hero-buttons">
+          <a href="https://github.com/NamishYanamala" target="_blank" rel="noopener" class="btn btn-outline">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Namish Yanamala — built with HTML, CSS, and mild sleep deprivation.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
